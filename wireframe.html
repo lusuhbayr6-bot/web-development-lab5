@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wireframe – Хөх цай</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;padding:32px 16px;font-family:Arial,sans-serif;background:#f3f3f3;color:#222}
+  h1{font-size:1.5rem;text-align:center;margin:0 0 4px}
+  .sub{text-align:center;color:#666;margin:0 0 32px}
+  .row{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:flex-start}
+  .col h2{font-size:1rem;text-align:center;margin:0 0 10px}
+  .frame{background:#fff;border:2px solid #333;overflow:hidden}
+  .mobile{width:320px}
+  .tablet{width:480px}
+  .desktop{width:760px;max-width:100%}
+  .b{background:#ddd;border:1px dashed #888;display:flex;align-items:center;justify-content:center;font-size:12px;color:#444;padding:6px;text-align:center}
+  .nav{background:#bbb;height:40px;display:flex;align-items:center;justify-content:space-between;padding:0 10px;font-size:12px}
+  .nav span{display:inline-block;margin-left:12px}
+  .burger{width:24px;height:18px;border-top:3px solid #333;border-bottom:3px solid #333;position:relative}
+  .burger::after{content:"";position:absolute;left:0;right:0;top:4px;border-top:3px solid #333}
+  .pad{padding:10px;display:grid;gap:8px}
+  .g1{grid-template-columns:1fr}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}
+  .hero{height:130px}.card{height:60px}.tall{height:90px}.foot{height:44px;background:#999}
+  .note{font-size:12px;color:#555;max-width:760px;margin:24px auto 0;line-height:1.6}
+</style>
+</head>
+<body>
+<h1>Wireframe: Хөх цайны газар</h1>
+<p class="sub">Гар утас (≤768px) · Таблет (≤1024px) · Компьютер (&gt;1024px)</p>
+ 
+<div class="row">
+  <div class="col">
+    <h2>Mobile (320px)</h2>
+    <div class="frame mobile">
+      <div class="nav"><b>Лого</b><div class="burger"></div></div>
+      <div class="pad g1">
+        <div class="b hero">Hero: гарчиг + товч</div>
+        <div class="b card">Цэс 1</div>
+        <div class="b card">Цэс 2</div>
+        <div class="b card">Цэс 3</div>
+        <div class="b tall">Бидний тухай</div>
+        <div class="b tall">Холбоо барих форм</div>
+      </div>
+      <div class="foot b">Footer</div>
+    </div>
+  </div>
+ 
+  <div class="col">
+    <h2>Tablet (480px)</h2>
+    <div class="frame tablet">
+      <div class="nav"><b>Лого</b><div class="burger"></div></div>
+      <div class="pad g1">
+        <div class="b hero">Hero: гарчиг + товч</div>
+        <div class="pad g2" style="padding:0">
+          <div class="b card">Цэс 1</div><div class="b card">Цэс 2</div>
+          <div class="b card">Цэс 3</div><div class="b card">Цэс 4</div>
+        </div>
+        <div class="b tall">Бидний тухай</div>
+        <div class="b tall">Холбоо барих форм</div>
+      </div>
+      <div class="foot b">Footer</div>
+    </div>
+  </div>
+</div>
+ 
+<div class="row" style="margin-top:32px">
+  <div class="col" style="width:100%;max-width:760px">
+    <h2>Desktop (1100px)</h2>
+    <div class="frame desktop" style="width:100%">
+      <div class="nav"><b>Лого</b><div><span>Цэс</span><span>Бидний тухай</span><span>Холбоо барих</span></div></div>
+      <div class="pad g1">
+        <div class="b hero">Hero: гарчиг + тайлбар + товч</div>
+        <div class="pad g3" style="padding:0">
+          <div class="b card">Цэс 1</div><div class="b card">Цэс 2</div><div class="b card">Цэс 3</div>
+          <div class="b card">Цэс 4</div><div class="b card">Цэс 5</div><div class="b card">Цэс 6</div>
+        </div>
+        <div class="pad" style="padding:0;grid-template-columns:1.2fr 1fr">
+          <div class="b tall">Бидний тухай</div><div class="b tall">Мэдээлэл</div>
+        </div>
+        <div class="b tall">Холбоо барих форм</div>
+      </div>
+      <div class="foot b">Footer</div>
+    </div>
+  </div>
+</div>
+ 
+<p class="note"><b>Тайлбар:</b> Desktop дээр навигаци хэвтээ мөр. 768px-ээс бага үед hamburger товч болж, дарахад цэс босоо жагсаалтаар нээгдэнэ. Цэсний картууд 3 → 2 → 1 баганатай болно.</p>
+</body>
+</html>
