@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Хөх цайны газар</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Хөх цай</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Цэс нээх">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Үндсэн цэс">
+        <ul>
+          <li><a href="#menu">Цэс</a></li>
+          <li><a href="#about">Бидний тухай</a></li>
+          <li><a href="#contact">Холбоо барих</a></li>
+          <!-- GitHub линк цэсэнд нэмэгдсэн -->
+          <li><a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Сүүтэй цай, халуун бууз. Өглөөг энд эхлүүл.</h1>
+        <p>Улаанбаатарын төвд байрлах жижиг цайны газар. Өдөр бүр шинэхэн хоолоор үйлчилнэ.</p>
+        <a class="btn" href="#menu">Цэс харах</a>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <h2>Өнөөдрийн цэс</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Сүүтэй цай</h3>
+            <p>Уламжлалт аргаар чанасан, давсны хэмжээ тохируулдаг.</p>
+            <span class="price">4,500₮</span>
+          </article>
+          <article class="card">
+            <h3>Бууз (5 ширхэг)</h3>
+            <p>Үхрийн махтай, уураар жигнэсэн халуун бууз.</p>
+            <span class="price">8,000₮</span>
+          </article>
+          <article class="card">
+            <h3>Хуушуур</h3>
+            <p>Шарсан, дотор нь шүүслэг мах. Хүйтэн өдөрт тохиромжтой.</p>
+            <span class="price">6,500₮</span>
+          </article>
+          <article class="card">
+            <h3>Цагаан идээний иж бүрдэл</h3>
+            <p>Аарц, ааруул, тараг, тосон дээр өгнө.</p>
+            <span class="price">9,000₮</span>
+          </article>
+          <article class="card">
+            <h3>Банштай шөл</h3>
+            <p>Гэрийн хийцийн банш, цэвэр шөл.</p>
+            <span class="price">7,500₮</span>
+          </article>
+          <article class="card">
+            <h3>Гүүзэн цай</h3>
+            <p>Жимс, бэрсүүт хуурай жимсээр баяжуулсан халуун ундаа.</p>
+            <span class="price">5,500₮</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="about">
+      <div class="container about-inner">
+        <div>
+          <h2>Бидний тухай</h2>
+          <p>Бид 2019 онд нэг жижиг тавиураар эхэлсэн. Одоо өдөр бүр олон зуун хүнд гэрийн амттай хоол хүргэдэг.</p>
+          <p>Түүхий эдээ орон нутгийн малчин өрхүүдээс авдаг тул хоол үргэлж шинэхэн байна.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>7 хоног бүр</strong> Даваагаас Ням гараг, 08:00–21:00</li>
+          <li><strong>45 хүртэл суудал</strong> Бүлгийн захиалга хүлээн авна</li>
+          <li><strong>Үнэгүй wifi</strong> Ажиллаж суухад тохиромжтой</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+        <h2>Холбоо барих</h2>
+        <p>Захиалга болон асуултаа бидэнд илгээнэ үү.</p>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Нэр</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="phone">Утасны дугаар</label>
+          <input id="phone" name="phone" type="tel" required>
+
+          <label for="msg">Зурвас</label>
+          <textarea id="msg" name="msg" rows="4"></textarea>
+
+          <button class="btn" type="submit">Илгээх</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Сүхбаатарын талбайн ойролцоо, Улаанбаатар · Утас: 7700-0000</p>
+      <!-- Footer хэсэг дэх GitHub линк -->
+      <p>Эх код: <a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">GitHub дээр үзэх</a></p>
+      <p>© 2026 Хөх цай</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Цэс хаах' : 'Цэс нээх');
+    });
+    nav.addEventListener('click', e => {
+      if (e.target.tagName === 'A') {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
