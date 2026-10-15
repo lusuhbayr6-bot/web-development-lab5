@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб 4 - Layout Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <h2>TechPortal</h2>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Нүүр</a></li>
+                <li><a href="#">Мэдээлэл</a></li>
+                <li><a href="#">Төслүүд</a></li>
+                <li><a href="https://github.com" target="_blank" class="github-link">GitHub</a></li>
+                <li><a href="#">Холбогдох</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <h3>Ангилал</h3>
+            <ul>
+                <li><a href="#">Вэб хөгжүүлэлт</a></li>
+                <li><a href="#">Программчлал</a></li>
+                <li><a href="#">Өгөгдлийн бааз</a></li>
+                <li><a href="#">Дизайн & UI/UX</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Сүүлийн үеийн нийтлэлүүд</h1>
+            <p>Вэб хөгжүүлэлт болон шинэ технологийн тухай онцлох мэдээллүүд</p>
+            
+            <div class="card-grid">
+                <article class="card">
+                    <span class="tag">HTML & CSS</span>
+                    <h3>Flexbox болон Grid-ийн ялгаа</h3>
+                    <p>Вэб макет зохиоход Flexbox болон CSS Grid-ийг хэзээ, хэрхэн хослуулж ашиглах тухай зөвлөмж.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">JavaScript</span>
+                    <h3>ES6+ Шинэ боломжууд</h3>
+                    <p>Орчин үеийн JavaScript-ийн асинхрон функц, деструктуризаци зэрэг гол онцлогууд.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">Database</span>
+                    <h3>PostgreSQL ба MySQL</h3>
+                    <p>Реляцийн өгөгдлийн баазын бүтэц, гүйцэтгэл болон ашиглагдах хүрээний харьцуулалт.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">UI/UX</span>
+                    <h3>Responsive Design-ий зарчим</h3>
+                    <p>Бүх төрлийн дэлгэцийн хэмжээнд тохирсон мэдрэмжтэй веб сайт хөгжүүлэх арга барил.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">Backend</span>
+                    <h3>REST API Архитектур</h3>
+                    <p>Веб аппликейшны сервер болон клиент хоорондын өгөгдөл солилцооны стандарт бүтэц.</p>
+                </article>
+                <article class="card">
+                    <span class="tag">DevOps</span>
+                    <h3>Git болон GitHub ашиглалт</h3>
+                    <p>Төслийн хувилбарыг хянах, багаар ажиллах болон GitHub Pages дээр байршуулах заавар.</p>
+                </article>
+            </div>
+        </main>
+
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 TechPortal. | <a href="https://github.com" target="_blank">GitHub Profile</a></p>
+    </footer>
+
+</body>
+</html>

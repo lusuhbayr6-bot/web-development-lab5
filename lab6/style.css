@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    color: white;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+.nav-links .github-link {
+    background-color: #0284c7;
+    padding: 6px 14px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav-links .github-link:hover {
+    background-color: #0369a1;
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #475569;
+}
+
+.sidebar a:hover {
+    color: #0284c7;
+}
+
+.main-content {
+    flex: 4;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h1 {
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    color: #64748b;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/* 3D орчин гаргах */
+.card-container {
+  perspective: 1000px;
+  width: 300px;
+  height: 200px;
+}
+
+/* Картын үндсэн тохиргоо */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+/* JavaScript-ээр .flipped класс нэмэгдэх үед 180 градус эргэнэ */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Урд болон ар талын нийтлэг тохиргоо */
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Арын нүүрийг нууна */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Урд талын загвар */
+.card-front {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Ар талын загвар (Анхнаасаа 180 градус эргэсэн байна) */
+.card-back {
+  background-color: #4f46e5;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0284c7;
+    background-color: #e0f2fe;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.card p {
+    font-size: 0.875rem;
+    color: #475569;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 15px;
+    margin-top: auto;
+}
+
+.site-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
