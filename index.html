@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPortal | Лаб 4 - Layout Design & Software Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header class="header" id="home">
+        <a href="#home" class="logo">
+            <span class="logo-icon">◆</span>
+            Tech<span class="logo-accent">Portal</span>
+        </a>
+ 
+        <nav class="nav">
+            <a href="#home" class="active">Нүүр</a>
+            <a href="#articles">Мэдээлэл</a>
+            <a href="#projects">Төслүүд</a>
+            <a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
+            <a href="#contact">Холбогдох</a>
+            <a href="preview.html" class="preview-link">📱 Төхөөрөмжөөр үзэх</a>
+        </nav>
+ 
+        <a href="#articles" class="login-button">Эхлэх ↗</a>
+    </header>
+ 
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">✦ ПРОГРАММ ХАНГАМЖ · ВЭБ · ТЕХНОЛОГИ</span>
+ 
+                <h1>
+                    Технологийг сур.<br>
+                    <span>Хөгжүүлэгч бол.</span>
+                </h1>
+ 
+                <p>
+                    Программ хангамж, вэб хөгжүүлэлт болон шинэ технологийн
+                    тухай онцлох мэдээллүүдийг нэг дороос аваарай.
+                </p>
+ 
+                <div class="hero-buttons">
+                    <a href="#articles" class="primary-button">Нийтлэл унших</a>
+                    <a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer" class="outline-button">GitHub →</a>
+                </div>
+ 
+                <div class="hero-stats">
+                    <div>
+                        <strong>06</strong>
+                        <span>Нийтлэл</span>
+                    </div>
+                    <div>
+                        <strong>04</strong>
+                        <span>Ангилал</span>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+                <div class="visual-card">
+                    <span class="visual-label">LAB 4 · LAYOUT DESIGN</span>
+                    <div class="visual-symbol">&lt;/&gt;</div>
+                    <h2>Code more.<br>Build better.</h2>
+                    <p>Жижиг алхам бүр чамайг урагшлуулна.</p>
+                    <div class="progress-line"><span></span></div>
+                    <small>Суралцах аялал эхэллээ</small>
+                </div>
+                <div class="floating-badge">✦ Keep learning</div>
+            </div>
+        </section>
+ 
+        <section class="dashboard">
+            <div class="main-content">
+ 
+                <section class="courses" id="articles">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-label">ШИНЭ МЭДЭЭЛЭЛ</span>
+                            <h2>Сүүлийн үеийн нийтлэлүүд</h2>
+                            <p>Программ хангамж, вэб хөгжүүлэлт болон шинэ технологийн тухай онцлох мэдээллүүд.</p>
+                        </div>
+                        <span class="course-count">06 нийтлэл</span>
+                    </div>
+ 
+                    <div class="course-grid">
+                        <article class="course-card card-blue">
+                            <div class="card-top">
+                                <div class="course-icon">#</div>
+                            </div>
+                            <span class="course-type">HTML &amp; CSS</span>
+                            <h3>Flexbox болон Grid-ийн ялгаа</h3>
+                            <p>Вэб макет зохиоход Flexbox болон CSS Grid-ийг хэзээ, хэрхэн хослуулж ашиглах тухай зөвлөмж.</p>
+                        </article>
+ 
+                        <article class="course-card card-purple">
+                            <div class="card-top">
+                                <div class="course-icon">JS</div>
+                            </div>
+                            <span class="course-type">JAVASCRIPT</span>
+                            <h3>ES6+ Шинэ боломжууд</h3>
+                            <p>Орчин үеийн JavaScript-ийн асинхрон функц, деструктуризаци зэрэг гол онцлогууд.</p>
+                        </article>
+ 
+                        <article class="course-card card-green">
+                            <div class="card-top">
+                                <div class="course-icon">▤</div>
+                            </div>
+                            <span class="course-type">DATABASE</span>
+                            <h3>PostgreSQL ба MySQL</h3>
+                            <p>Реляцийн өгөгдлийн баазын бүтэц, гүйцэтгэл болон ашиглагдах хүрээний харьцуулалт.</p>
+                        </article>
+ 
+                        <article class="course-card card-blue">
+                            <div class="card-top">
+                                <div class="course-icon">UX</div>
+                            </div>
+                            <span class="course-type">UI/UX</span>
+                            <h3>Responsive Design-ий зарчим</h3>
+                            <p>Бүх төрлийн дэлгэцийн хэмжээнд тохирсон мэдрэмжтэй веб сайт хөгжүүлэх арга барил.</p>
+                        </article>
+ 
+                        <article class="course-card card-purple">
+                            <div class="card-top">
+                                <div class="course-icon">API</div>
+                            </div>
+                            <span class="course-type">BACKEND</span>
+                            <h3>REST API Архитектур</h3>
+                            <p>Веб аппликейшны сервер болон клиент хоорондын өгөгдөл солилцооны стандарт бүтэц.</p>
+                        </article>
+ 
+                        <article class="course-card card-green">
+                            <div class="card-top">
+                                <div class="course-icon">Git</div>
+                            </div>
+                            <span class="course-type">DEVOPS</span>
+                            <h3>Git болон GitHub ашиглалт</h3>
+                            <p>Төслийн хувилбарыг хянах, багаар ажиллах болон GitHub Pages дээр байршуулах заавар.</p>
+                        </article>
+                    </div>
+                </section>
+ 
+            </div>
+ 
+            <aside class="sidebar">
+                <div class="profile-card">
+                    <div class="profile-avatar">T</div>
+                    <div>
+                        <span class="profile-label">ТАВТАЙ МОРИЛ</span>
+                        <h3>TechPortal</h3>
+                        <p>Технологийн портал</p>
+                    </div>
+                </div>
+ 
+                <div class="sidebar-section">
+                    <h3>Ангилал</h3>
+                    <a href="#articles"><span>▣</span> Вэб хөгжүүлэлт <b>↗</b></a>
+                    <a href="#articles"><span>☷</span> Программчлал <b>↗</b></a>
+                    <a href="#articles"><span>▤</span> Өгөгдлийн бааз <b>↗</b></a>
+                    <a href="#articles"><span>✦</span> Дизайн &amp; UI/UX <b>↗</b></a>
+                </div>
+ 
+                <div class="tip-card">
+                    <span class="tip-icon">✦</span>
+                    <h3>Өдөр бүр нэг алхам</h3>
+                    <p>Бага багаар суралцах нь том амжилтын эхлэл.</p>
+                </div>
+            </aside>
+        </section>
+ 
+        <section class="about" id="projects">
+            <span class="section-label">ТӨСЛҮҮД</span>
+            <h2>Кодоо GitHub дээрээс үз.</h2>
+            <p>Лабораторийн ажлууд болон төслүүд GitHub репозиторт байрласан.</p>
+            <a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer" class="primary-button">GitHub нээх ↗</a>
+            <a href="preview.html" class="primary-button">Төхөөрөмжөөр үзэх</a>
+        </section>
+    </main>
+ 
+    <footer class="footer" id="contact">
+        <a href="#home" class="logo">
+            <span class="logo-icon">◆</span>
+            Tech<span class="logo-accent">Portal</span>
+        </a>
+        <p>Суралц. Хөгж. Бүтээ. · <a href="preview.html">Төхөөрөмжөөр үзэх</a></p>
+        <span>© 2026 TechPortal · <a href="https://github.com/lusuhbayr6-bot/web-development-lab5" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+    </footer>
+ 
+</body>
+</html>
+ 
